@@ -1,0 +1,9 @@
+1. Object Classes
+2. Test Classes
+
+1. POM Design Pattern
+2. Selenium Page Factory - Library to locate the elements and store it 
+3. TestNG - Inbuild Framework
+4. Listener(InTestFailure)
+5. ExtentReport to generate report`
+6. Log4j for writing logs
