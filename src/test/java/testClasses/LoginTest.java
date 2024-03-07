@@ -12,7 +12,6 @@ import objectClasses.LoginPage;
 
 
 public class LoginTest extends MainClass{
-	
 	@Test
 	public void LoginPageTest() {
 
@@ -30,6 +29,8 @@ public class LoginTest extends MainClass{
 		String expectedText="Sign Off";
 		Assert.assertEquals(actualText, expectedText);
 	    System.out.println(driver.getTitle()+driver.getPageSource());
+	    System.out.println(driver.getTitle()+driver.getCurrentUrl());
+
 		
 	}
 
