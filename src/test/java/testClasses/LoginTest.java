@@ -2,7 +2,8 @@ package testClasses;
 
 import java.time.Duration;
 
-
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import baseClass.MainClass;
@@ -25,6 +26,9 @@ public class LoginTest extends MainClass{
 		lp.enterPassword(pwd);
 		// Click login button
 		lp.clickLogin();
+		String actualText=driver.findElement(By.xpath("//font[text()='Sign Off']")).getText();
+		String expectedText="Sign Off";
+		Assert.assertEquals(actualText, expectedText);
 		
 	}
 
