@@ -29,7 +29,7 @@ public class LoginTest extends MainClass{
 		String actualText=driver.findElement(By.xpath("//font[text()='Sign Off']")).getText();
 		String expectedText="Sign Off";
 		Assert.assertEquals(actualText, expectedText);
-	    System.out.println(driver.getTitle());
+	    System.out.println(driver.getTitle()+driver.getPageSource());
 		
 	}
 
